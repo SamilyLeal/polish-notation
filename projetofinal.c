@@ -52,7 +52,7 @@ void printTreeExpression(struct Node *root) {
 int main() {
     //as arvores precisam ser montadas manualmente :(
 	
-	//(+ (+ 5 3) (* 2 4)) -> Resultado 16
+    //(+ (+ 5 3) (* 2 4)) -> Resultado 16
     struct Node* expression1 = createNode('+');
     expression1->left = createNode('+');
     expression1->left->left = createNode('5');
@@ -104,28 +104,28 @@ int main() {
 
 
 
-	printf("Expressao: ");
-	printTreeExpression(expression1);
+    printf("Expressao: ");
+    printTreeExpression(expression1);
     printf("\nResultado: %d\n\n", calculateExpression(expression1));
     
     printf("Expressao: ");
-	printTreeExpression(expression2);
+    printTreeExpression(expression2);
     printf("\nResultado: %d\n\n", calculateExpression(expression2));
     
     printf("Expressao: ");
-	printTreeExpression(expression3);
+    printTreeExpression(expression3);
     printf("\nResultado: %d\n\n", calculateExpression(expression3));
     
     printf("Expressao: ");
-	printTreeExpression(expression4);
+    printTreeExpression(expression4);
     printf("\nResultado: %d\n\n", calculateExpression(expression4));
     
     printf("Expressao: ");
-	printTreeExpression(expression5);
+    printTreeExpression(expression5);
     printf("\nResultado: %d\n\n", calculateExpression(expression5));
     
     printf("Expressao: ");
-	printTreeExpression(expression6);
+    printTreeExpression(expression6);
     printf("\nResultado: %d\n\n", calculateExpression(expression6));
 	
     return 0;
